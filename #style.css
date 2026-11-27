@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #7771f5, #a36ce8, #d18ce2);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Navbar */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+    padding: 15px 30px;
+    background: rgba(80, 55, 190, 0.3);
+}
+
+.navbar h2 {
+    font-size: 24px;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+/* Form Card */
+
+.container {
+    max-width: 650px;
+    margin: 40px auto;
+    background: #fff8f2;
+    padding: 25px;
+    border-radius: 30px;
+    box-shadow: 0 15px 35px #4c1d9580;
+}
+
+/* Heading */
+
+.header {
+    text-align: center;
+    background: linear-gradient(90deg, #5b4bdb, #9155e8);
+    color: white;
+    padding: 25px;
+    border-radius: 25px;
+    margin-bottom: 25px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.header p {
+    font-size: 18px;
+}
+
+/* Input Rows */
+
+.field {
+    display: grid;
+    grid-template-columns: 35px 1fr;
+    gap: 15px;
+    align-items: center;
+    margin-top: 18px;
+}
+
+.field span {
+    font-size: 24px;
+    color: #6045d8;
+    text-align: center;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    color: #27145f;
+    font-size: 17px;
+    margin-bottom: 6px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #c5a5f5;
+    border-radius: 15px;
+    font-size: 16px;
+    background: white;
+    color: #35216f;
+}
+
+textarea {
+    height: 85px;
+    resize: vertical;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: 2px solid #9470ed;
+}
+
+/* Submit */
+
+button {
+    width: 100%;
+    padding: 17px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(90deg, #6554e8, #9659ed);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+#result {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .links a {
+        display: inline-block;
+        margin: 8px;
+    }
+
+    .container {
+        padding: 18px;
+        margin-top: 20px;
+    }
+
+    .header h1 {
+        font-size: 23px;
+    }
+
+    .field {
+        grid-template-columns: 28px 1fr;
+        gap: 10px;
+    }
+}
+body{
+    background: red !important;
+}
